@@ -22,7 +22,7 @@ Réalisé pendant les cours sur Express chez dyma.fr
 > mkdir routes
 
 Dans package.json :
-"start": "nodemon app.js",
+"start": "nodemon app.js", // Si besoin > npm i nodemon
 puis
 "start": "PORT=4000 nodemon app.js" (non WINDOWS)
 "start": "SET PORT=4000 && nodemon app.js" (WINDOWS)
