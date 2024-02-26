@@ -26,3 +26,31 @@ Dans package.json :
 puis
 "start": "PORT=4000 nodemon app.js" (non WINDOWS)
 "start": "SET PORT=4000 && nodemon app.js" (WINDOWS)
+
+## Etape 2 - API Tweets + Tweets Feed
+
+> mkdir views/tweets
+> cd views/tweets
+> touch tweet-form.pug
+> touch tweet-list.pug
+> cd..
+> cd includes
+> touch profile.pug
+
+> npm i mongoose
+
+> mkdir database
+> cd database
+> mkdir models
+> touch index.js
+
+> cd ..
+> cd ..
+> touch env.js
+
+> cd database/models
+> touch tweet.model.js
+
+> cd routes
+> touch api.js
+> touch api.tweets.js

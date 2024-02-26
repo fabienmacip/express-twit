@@ -1,10 +1,12 @@
 const express = require("express");
 const morgan = require("morgan");
 const path = require("path");
-const app = express();
-const port = process.env.PORT || 3000;
-
 const index = require("./routes");
+
+require("./database");
+
+const app = express();
+const port = process.env.PORT || 4000;
 
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");
