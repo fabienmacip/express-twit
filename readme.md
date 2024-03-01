@@ -6,19 +6,19 @@ Réalisé pendant les cours sur Express chez dyma.fr
 
 ## Etape 1 - Architecture + layout + topbar
 
-> npm init
+> npm init  
 > npm i express morgan pug
 
-> touch app.js
-> mkdir views
+> touch app.js  
+> mkdir views  
 > mkdir public
 
-> cd public
-> mkdir javascripts
-> mkdir images
+> cd public  
+> mkdir javascripts  
+> mkdir images  
 > mkdir css
 
-> cd ..
+> cd ..  
 > mkdir routes
 
 Dans package.json :
@@ -29,28 +29,28 @@ puis
 
 ## Etape 2 - API Tweets + Tweets Feed
 
-> mkdir views/tweets
-> cd views/tweets
-> touch tweet-form.pug
-> touch tweet-list.pug
-> cd..
-> cd includes
+> mkdir views/tweets  
+> cd views/tweets  
+> touch tweet-form.pug  
+> touch tweet-list.pug  
+> cd..  
+> cd includes  
 > touch profile.pug
 
 > npm i mongoose
 
-> mkdir database
-> cd database
-> mkdir models
+> mkdir database  
+> cd database  
+> mkdir models  
 > touch index.js
 
-> cd ..
-> cd ..
+> cd ..  
+> cd ..  
 > touch env.js
 
-> cd database/models
+> cd database/models  
 > touch tweet.model.js
 
-> cd routes
-> touch api.js
+> cd routes  
+> touch api.js  
 > touch api.tweets.js
