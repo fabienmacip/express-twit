@@ -4,7 +4,8 @@
   "description": "Réalisé pendant les cours sur Express chez dyma.fr",
   "main": "app.js",
   "scripts": {
-    "start": "SET PORT=4000 && nodemon app.js",
+    "start": "SET PORT=4000 && SET NODE_ENV=development && nodemon app.js",
+    "start:prod": "SET PORT=4000 && SET NODE_ENV=production && nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/fabienmacip/express-twit#readme",
   "dependencies": {
+    "errorhandler": "^1.5.1",
     "express": "^4.18.2",
     "mongoose": "^8.2.0",
     "morgan": "^1.10.0",

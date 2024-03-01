@@ -54,3 +54,7 @@ puis
 > cd routes  
 > touch api.js  
 > touch api.tweets.js
+
+> npm i errorhandler --save
+
+"start:prod": "SET PORT=4000 && NODE_ENV=production nodemon app.js",
