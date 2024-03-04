@@ -2,7 +2,7 @@ if tweets
   each tweet in tweets
     div(class="card tweet-element")
       div(class="card-body")
-        div(class="card-text")
+        a(class="card-text" href="/tweets/edit/" + tweet._id)
           pre= tweet.content
         button(class="btn btn-danger mt-2 float-right" tweetid=tweet._id) x
 
