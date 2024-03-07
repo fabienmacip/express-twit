@@ -8,6 +8,7 @@ const tweetSchema = schema({
     maxlength: [140, "Maximum 140 caractères"],
     required: [true, "Champ requis"],
   },
+  author: { type: schema.Types.ObjectId, ref: "user", required: true },
 });
 
 const Tweet = mongoose.model("tweet", tweetSchema);

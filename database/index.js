@@ -3,7 +3,7 @@ const path = require("path");
 
 const dbIds = require(path.join(__dirname, "..", "env.js"));
 
-mongoose
+exports.clientPromise = mongoose
   .connect(dbIds)
   .then(() => {
     console.log("connexion bd ok !!!");
