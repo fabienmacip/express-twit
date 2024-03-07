@@ -10,7 +10,7 @@ const userSchema = schema({
   },
 });
 
-userSchema.statics.hashPassword = (password) => {
+userSchema.statics.hashedPassword = (password) => {
   return bcrypt.hash(password, 12);
 };
 

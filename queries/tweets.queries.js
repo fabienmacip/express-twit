@@ -5,7 +5,7 @@ exports.getTweet = (tweetId) => {
 };
 
 exports.getTweets = () => {
-  return Tweet.find().exec();
+  return Tweet.find({}).exec();
 };
 
 exports.createTweet = (tweet) => {
