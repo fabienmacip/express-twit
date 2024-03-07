@@ -58,3 +58,13 @@ puis
 > npm i errorhandler --save
 
 "start:prod": "SET PORT=4000 && NODE_ENV=production nodemon app.js",
+
+_> npm i passport-google-oauth20_
+
+> npm i express-session
+> npm i connect-mongo
+> npm i bcrypt
+> npm i passport
+> npm i passport-local
+
+> npm i multer
