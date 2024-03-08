@@ -1,0 +1,11 @@
+::1 - - [08/Mar/2024:17:27:51 +0000] "GET /tweets/ HTTP/1.1" 200 3454 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+::1 - - [08/Mar/2024:17:27:51 +0000] "GET /css/main.css HTTP/1.1" 200 935 "https://localhost:4430/tweets/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+::1 - - [08/Mar/2024:17:27:51 +0000] "GET /javascripts/tweets/tweet.js HTTP/1.1" 200 647 "https://localhost:4430/tweets/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+::1 - - [08/Mar/2024:17:27:51 +0000] "GET /images/avatars/1709917972955-bug-twitter.jpg HTTP/1.1" 200 29943 "https://localhost:4430/tweets/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+::1 - - [08/Mar/2024:17:27:51 +0000] "GET /javascripts/profile/profile.js HTTP/1.1" 200 365 "https://localhost:4430/tweets/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+::1 - - [08/Mar/2024:17:27:52 +0000] "GET /images/twitter.png HTTP/1.1" 200 2976 "https://localhost:4430/tweets/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+::1 - - [08/Mar/2024:17:28:46 +0000] "GET /tweets/new HTTP/1.1" 500 27 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+::1 - - [08/Mar/2024:17:29:46 +0000] "GET /tweets/new HTTP/1.1" 500 27 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+[0mGET /tweets/new [31m500[0m 336.077 ms - 27[0m
+[0mGET /tweets/new [31m500[0m 75.548 ms - 27[0m
+::1 - - [08/Mar/2024:17:32:26 +0000] "GET /tweets/new HTTP/1.1" 500 27 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"

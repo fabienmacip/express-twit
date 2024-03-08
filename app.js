@@ -7,8 +7,10 @@ const errorHandler = require("errorhandler");
 require("./database");
 
 const app = express();
-exports.app = app;
-const port = process.env.PORT || 4000;
+module.exports = app;
+
+// To delete
+//const port = process.env.PORT || 4000;
 
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");
@@ -17,6 +19,22 @@ require("./config/session.config");
 require("./config/passport.config");
 
 app.use(morgan("short"));
+// DEBUG - dev
+/* 
+const fs = require("fs");
+app.use(morgan("combined"));
+const writeLogStream = fs.createWriteStream(
+  path.join(__dirname, "errors.log"),
+  { flags: "a" }
+);
+app.use(
+  morgan("combined", {
+    skip: (req, res) => res.statusCode < 400,
+    stream: writeLogStream,
+  })
+); */
+// FIN DEBUG - dev
+
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -34,4 +52,4 @@ if (process.env.NODE_ENV === "development") {
   });
 }
 
-app.listen(port);
+//app.listen(port);
