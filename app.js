@@ -40,6 +40,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(index);
 
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  //res.status(500).send({ error: err });
+});
+
 if (process.env.NODE_ENV === "development") {
   app.use(errorHandler());
 } else {

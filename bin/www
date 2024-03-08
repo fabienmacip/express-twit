@@ -37,13 +37,13 @@ const httpServer = http
 const httpsServer = https
   .createServer(
     {
-      key: fs.readFileSync(path.join(__dirname, "../ssl/local.key")),
-      cert: fs.readFileSync(path.join(__dirname, "../ssl/local.crt")),
+      key: fs.readFileSync(env.key),
+      cert: fs.readFileSync(env.cert),
     },
     app
   )
   .listen(4430);
 
-/*   key: fs.readFileSync(env.key),
-  cert: fs.readFileSync(env.cert),
+/*     key: fs.readFileSync(path.join(__dirname, "../ssl/local.key")),
+    cert: fs.readFileSync(path.join(__dirname, "../ssl/local.crt")),
  */
