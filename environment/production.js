@@ -4,6 +4,6 @@ const dbIds = require(path.join(__dirname, "..", "env.js"));
 
 module.exports = {
   dbUrl: dbIds,
-  cert: path.join(__dirname, ""),
-  key: path.join(__dirname, ""),
+  cert: "/etc/letsencrypt/live/www.test-twit.fr/fullchain.pem",
+  key: "/etc/letsencrypt/live/www.test-twit.fr/privkey.pem",
 };
