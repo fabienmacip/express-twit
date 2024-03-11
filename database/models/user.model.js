@@ -9,6 +9,7 @@ const userSchema = schema({
     password: { type: String, required: true },
   },
   avatar: { type: String, default: "/images/avatars/avatar1.jpg" },
+  following: { type: [schema.Types.ObjectId], ref: "user" },
 });
 
 userSchema.statics.hashedPassword = (password) => {
